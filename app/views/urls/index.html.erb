@@ -1,0 +1,15 @@
+<h1>Welcome to URL Shortener</h1>
+<%= form_for :url do |f| %>
+  <p>
+    <%= f.label :original_url %> <br>
+    <%= f.text_field :original_url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<br>
+
+
+
+

@@ -1,4 +1,7 @@
 UrlShortener::Application.routes.draw do
+  resources :urls
+
+  root :to => 'urls#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

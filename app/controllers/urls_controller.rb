@@ -16,4 +16,9 @@ class UrlsController < ActionController::Base
     @url = Url.find(params[:id])
   end
 
+  def get_short
+    @record = Url.find_by_shortened_url(params[:shortened_url])
+    redirect_to @record.original_url
+  end
+
 end

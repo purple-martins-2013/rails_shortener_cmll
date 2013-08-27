@@ -1,5 +1,2 @@
-<%# if @url %>
-  <%# @url.each do |u| %>
-    <%= @url.original_url %><br>
-  <%# end %>
-<%# end %>
+<%= @url.original_url %><br>
+<%= link_to @url.shortened_url, @url.original_url %>

@@ -2,6 +2,8 @@ UrlShortener::Application.routes.draw do
   resources :urls
 
   root :to => 'urls#index'
+
+  get '/:shortened_url' => 'urls#get_short'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
